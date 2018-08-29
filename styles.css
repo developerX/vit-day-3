@@ -1,6 +1,140 @@
-/* Add your custom css here */
 
-body {
-  background: orange;
-  color: white;
+.std-body{
+  background-color:#f4f4f4;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.6em;
+  margin:0;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+#main-header{
+  background-color:lightslategrey;
+  color:white;
+}
+
+#navbar{
+  background-color:teal;
+  color:lightslategray;
+}
+
+#navbar ul{
+  padding:0;
+  list-style:none;
+}
+
+#navbar li{
+  display:inline;
+}
+
+#navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:16px;
+  padding-right:15px;
+}
+
+#navbar a:hover{
+  color:lightcoral;
+}
+
+#showcase{
+  background-image:url(./img/wallpaper.jpeg);
+  background-size:100% 100%;
+  background-position:center;
+  margin-bottom:30px;
+  text-align:center;
+  min-height:400px;
+}
+
+#showcase h1{
+  color:white;
+  font-size:40px;
+  line-height:1.6em;
+  padding-top:30px;
+  position: relative;
+  animation:content;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
+} 
+
+@keyframes content{
+  0% {top:0px; left:-1000px}
+  100% {top:0px; left:0px}
+}
+
+#showcase h3{
+  color:lightcoral;
+  position:relative;
+  animation:guess;
+  animation-duration:7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes guess{
+  0% {top:400px}
+  100% {top:0px}
+}
+
+#main{
+  float:left;
+  width:70%;
+  padding:0 30px;
+  box-sizing: border-box;
+  color:darkslategray;
+}
+
+#sidebar{
+  float:right;
+  width:30%;
+  padding:0 30px;
+  box-sizing: border-box;
+  color:darkslategray;
+  text-align: center;
+}
+
+#sidebar img{
+  align-self: auto;
+  height:auto;
+  width:auto;
+  max-height:200px;
+  max-width:200px;
+}
+
+
+.std-footer {
+  background-color:lightslategray;
+  color:teal;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+.answer{
+  padding:200px;
+  color:darkslategray;
+  text-align:center;
+}
+
+.btn{
+  display:inline-block;
+  background-color:#f4f4f4;
+  color:teal;
+  font-size:16px;
+  text-decoration: none;
+  border: darkslategray 1px solid;
+  margin-top:40px;
+  padding: 1rem 2rem;
+}
+
+
+.btn:hover{
+  background-color:lightcoral;
+  color:darkslategray;
 }
