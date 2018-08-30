@@ -8,7 +8,7 @@
   margin:0;
 }
 
-.container{
+.wrapper{
   width:80%;
   margin:auto;
   overflow:hidden;
@@ -130,6 +130,7 @@
   text-decoration: none;
   border: darkslategray 1px solid;
   margin-top:40px;
+  margin-left:350px;
   padding: 1rem 2rem;
 }
 
@@ -137,4 +138,10 @@
 .btn:hover{
   background-color:lightcoral;
   color:darkslategray;
+}
+
+@media screen and (max-width:720px){
+  .std-body{
+    background-color: blueviolet;
+  }
 }
